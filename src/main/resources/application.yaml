@@ -1,0 +1,14 @@
+spring:
+  ai:
+    dashscope:
+      api-key: ${DASHSCOPE_API_KEY}
+    vectorstore:
+      redis:
+        initialize-schema: true
+        prefix: prefix_redis_ai
+        index: index_redis_ai
+  data:
+    redis:
+      host: 127.0.0.1
+      port: 6379
+      connect-timeout: 20000
